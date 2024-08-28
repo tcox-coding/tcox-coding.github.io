@@ -1,21 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taylor Cox - Personal Website</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Montserrat Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Uncomment for publish. -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://tcox-coding.github.io/style.css"> -->
 </head>
+
 <body>
     <header>
-
+        <div class="header-item">
+            <a href="#about-me-header">About Me</a>
+        </div>
+        <div class="header-item">
+            <a href="#resume-header">Resume</a>
+        </div>
+        <div class="header-item">
+            <a href="#skills">Skills</a>
+        </div>
+        <div class="header-item">
+            <a href="#projects">Projects</a>
+        </div>
+        <div class="header-item">
+            <a href="#contact-me">Contact</a>
+        </div>
     </header>
 
     <main>
-        <p>Hello, World</p>
+        <!-- About me -->
+        <h1 id="about-me-header">About Me</h1>
+        <div id="about-me">
+            <img src="/images/headshot.jpg" alt="" id="about-me-image">
+            <div id="about-me-text">
+                I am a passionate full-stack developer, with proven experience in
+                creating and deploying REST APIs, web application development,
+                and PostgreSQL database management. I have experience deploying
+                to the cloud using AWS and Linux virtual machines. Currently seeking
+                for a full-time position in software engineering.
+            </div>
+        </div>
+
+        <!-- Resume -->
+        <h1 id="resume-header">Resume</h1>
+        <div id="resume">
+            <div id="resume-pdf">
+                <object data="/files/Taylor Cox - Software Engineer.pdf" type="application/pdf" width="100%" height="500px">
+                    <p>Unable to display PDF file. <a href="/files/Taylor Cox - Software Engineer.pdf">Download</a> instead.</p>
+                  </object>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <h1 id="skills-header">Skills</h1>
+        <div id="skills">
+            <div id="programming-langauges">
+                <h5>Programming Languages</h5>
+                <ul>
+                    <li>Python</li>
+                    <li>React and jQuery</li>
+                    <li>Java</li>
+                    <li>C / C++</li>
+                </ul>
+            </div>
+            <div id="operating-systems">
+                <h5>Operating Systems</h5>
+                <ul>
+                    <li>Debian Linux</li>
+                    <li>Windows Server 2019</li>
+                    <li>Windows 10/11</li>
+                    <li>Docker</li>
+                </ul>
+            </div>
+            <div id="software">
+                <h5>Software</h5>
+                <ul>
+                    <li>Visual Studio Code</li>
+                    <li>Eclipse</li>
+                    <li>Figma</li>
+                    <li>Lucid Chart</li>
+                    <li>Microsoft Office</li>
+                </ul>
+            </div>
+            <div id="databases">
+                <h5>Databases</h5>
+                <ul>
+                    <li>PostgreSQL</li>
+                    <li>MySQL</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <h1 id="projects-header">Projects</h1>
+        <div id="projects">
+            <a href="">
+                <div class="project-card">
+                    <h2>CatanAI</h2>
+                    <img src="" alt="">
+                    <p>
+                        Spring Boot web app designed to learn how to play Catan and view previous training games
+                        using DQN and PPO machine learning algorithms. Technologies include Java, Python, and React.
+                    </p>
+                </div>
+            </a>
+            <a href="">    
+                <div class="project-card">
+                    <h2>TrafCheck</h2>
+                    <img src="" alt="">
+                    <p>
+                        An application used for checking daily drives and
+                    </p>
+                </div>
+            </a>
+            <a href="http://">
+                <div class="project-card">
+                    <h2>Gaming, Affect, Mastery Service</h2>
+                    <img src="" alt="">
+                    <p>
+                        API built to retrieve data pertaining to student gaming behaviors, mastery of skills and
+                        affect during in-classroom assignments. Technologies used include PostgreSQL, Python with FastAPI
+                        and HTML/CSS/jQuery.
+                    </p>
+                </div>
+            </a>
+        </div>
+
+        <!-- Contact me -->
+        <h1 id="contact-me-header">Contact Me</h1>
+        <div id="contact-me">
+            <a href="https://www.linkedin.com/in/taylor-g-cox/">LinkedIn</a>
+            <a href="mailto:taylor@coxintl.com">Email</a>
+        </div>
     </main>
 
     <footer>
 
     </footer>
 </body>
+
 </html>
